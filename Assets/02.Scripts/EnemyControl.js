@@ -15,6 +15,8 @@ public var player : GameObject;
 public var nvAgent : NavMeshAgent;
 
 private var traceNextTime : float = 0.0F;
+private var hp : int = 100;
+private var isDie : boolean = false;
 
 function Start () {
 	player = GameObject.Find("Player");
@@ -30,9 +32,51 @@ function Start () {
 }
 
 function Update () {
+
+	if (isDie)
+		return;
+		
 	if (Time.time >= traceNextTime) {
 		nvAgent.destination = player.transform.position;
 		traceNextTime = Time.time + 0.3F;
 	}
+	
+	if ((player.transform.position - transform.position).sqrMagnitude <= 10.0F) {
+		if (!animBody.IsPlaying(animEnemy.attack.name)) {
+			animBody.CrossFade(animEnemy.attack.name, 0.2F);
+		}
+	}
+	else 
+	{
+		if (!animBody.IsPlaying(animEnemy.walk.name)) {
+			animBody.CrossFade(animEnemy.walk.name, 0.2F);
+		}
+	}
 
+}
+
+function OnCollisionEnter(Coll : Collision)
+{
+	if (isDie)
+		return;
+		
+	if (Coll.gameObject.tag == "BULLET") {
+		Destroy(Coll.gameObject);
+		
+		hp -= Coll.gameObject.GetComponent.<BulletControl>().damage;
+		
+		if (hp <= 0)
+			Die();
+		else
+			animBody.CrossFade(animEnemy.hit.name, 0.01F);
+		
+	}
+}
+
+function Die()
+{
+	isDie = true;
+	nvAgent.active = false;
+	animBody.CrossFade(animEnemy.die.name, 0.2F);
+	Destroy(gameObject, animEnemy.die.length + 0.5F);
 }

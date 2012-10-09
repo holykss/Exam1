@@ -41,15 +41,15 @@ function Update () {
 	#endif
 	
 	transform.Translate(Vector3.forward * ver * Time.deltaTime * speed);
-	//transform.Translate(Vector3.right * hor * Time.deltaTime * speed);
-	transform.Rotate(Vector3.up * hor * Time.deltaTime * 100.0F);
+	transform.Translate(Vector3.right * hor * Time.deltaTime * speed);
+//	transform.Rotate(Vector3.up * hor * Time.deltaTime * 100.0F);
 	
-	if (ver > 0) {
-		animBody.animation.CrossFade(anim.walk.name, 0.5F);
-	}
-	else if (ver <0)
+	if (ver <0)
 	{
 		animBody.animation.CrossFade(anim.walk_back.name, 0.5F);
+	}
+	else if (ver > 0 || hor != 0) {
+		animBody.animation.CrossFade(anim.walk.name, 0.5F);
 	}
 	else 
 	{
