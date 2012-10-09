@@ -11,19 +11,24 @@ class _animEnemy {
 public var animEnemy : _animEnemy;
 public var animBody : Animation;
 
-public var player : GameObject;
-public var nvAgent : NavMeshAgent;
+private var playerTr : Transform;
+private var nvAgent : NavMeshAgent;
 
 private var traceNextTime : float = 0.0F;
 private var hp : int = 100;
 private var isDie : boolean = false;
 
+private var tr : Transform;
+
+
 function Start () {
-	player = GameObject.Find("Player");
+	tr = GetComponent.<Transform>();
+	playerTr = GameObject.Find("Player").GetComponent.<Transform>();
+	
 	nvAgent = gameObject.GetComponent.<NavMeshAgent>();
 	//nvAgent = GetComponent(NavMeshAgent);
 	
-	nvAgent.destination = player.transform.position;
+	nvAgent.destination = playerTr.position;
 	
 	animBody.clip = animEnemy.idle;
 	animBody.Play();
@@ -37,11 +42,11 @@ function Update () {
 		return;
 		
 	if (Time.time >= traceNextTime) {
-		nvAgent.destination = player.transform.position;
+		nvAgent.destination = playerTr.position;
 		traceNextTime = Time.time + 0.3F;
 	}
 	
-	if ((player.transform.position - transform.position).sqrMagnitude <= 10.0F) {
+	if ((playerTr.position - tr.position).sqrMagnitude <= 10.0F) {
 		if (!animBody.IsPlaying(animEnemy.attack.name)) {
 			animBody.CrossFade(animEnemy.attack.name, 0.2F);
 		}
@@ -76,7 +81,13 @@ function OnCollisionEnter(Coll : Collision)
 function Die()
 {
 	isDie = true;
-	nvAgent.active = false;
+	nvAgent.Stop();
 	animBody.CrossFade(animEnemy.die.name, 0.2F);
 	Destroy(gameObject, animEnemy.die.length + 0.5F);
+	
+	//gameObject.collider.active = false;
+	gameObject.GetComponent.<CapsuleCollider>().enabled = false;
+	
+	
+	GameObject.Find("Global").GetComponent.<Global>().GetScore(10);
 }

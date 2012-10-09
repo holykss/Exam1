@@ -48,6 +48,7 @@
      <Compile Include="Assets\02.Scripts\BulletControl.js" />
      <Compile Include="Assets\02.Scripts\EnemyControl.js" />
      <Compile Include="Assets\02.Scripts\Gizmo.js" />
+     <Compile Include="Assets\02.Scripts\Global.js" />
      <Compile Include="Assets\02.Scripts\PlayerControl.js" />
      <Compile Include="Assets\02.Scripts\WallControl.js" />
      <Compile Include="Assets\04.Models\character1\Scripts\CharacterCamera.js" />
@@ -57,9 +58,12 @@
      <Compile Include="Assets\04.Models\character1\Scripts\Foot.js" />
      <Compile Include="Assets\04.Models\character1\Scripts\OrbitCamera.js" />
      <Compile Include="Assets\04.Models\character1\Scripts\myThirdPersonController.js" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\04.Models\Robot\animations-list-brutes.txt" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Detonator\Resources\Detonator\Textures\HeatDistort.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

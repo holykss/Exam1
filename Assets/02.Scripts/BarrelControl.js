@@ -21,11 +21,11 @@ function OnCollisionEnter (Coll : Collision) {
 }
 
 function expBarrel () {
+	gameObject.AddComponent(Rigidbody);
 	Instantiate(sparkEffectForBarrel, transform.position, transform.rotation);
 	
 	// 필요할때에 물리 엔진 요소를 넣어준다.
-	gameObject.AddComponent(Rigidbody);
-//	gameObject.rigidbody.AddForce(Vector3.up * 100.0F);
+	//gameObject.rigidbody.AddForce(Vector3.up * 100.0F);
 	
 	Destroy(gameObject, 5.0F);
 }
