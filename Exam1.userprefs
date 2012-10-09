@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\04.Models\Robot\animations-list-brutes.txt">
+    <Files>
+      <File FileName="Assets\04.Models\Robot\animations-list-brutes.txt" Line="9" Column="1" />
+      <File FileName="Assets\02.Scripts\WallControl.js" Line="8" Column="1" />
+      <File FileName="Assets\02.Scripts\PlayerControl.js" Line="62" Column="9" />
+      <File FileName="Assets\02.Scripts\BulletControl.js" Line="6" Column="1" />
+      <File FileName="Assets\02.Scripts\Gizmo.js" Line="6" Column="2" />
+      <File FileName="Assets\02.Scripts\BarrelControl.js" Line="5" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp-firstpass" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="04.Models" expanded="True">
+                <Node name="Robot" expanded="True">
+                  <Node name="animations-list-brutes.txt" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
