@@ -2,7 +2,7 @@
 
 public var SpwanPoints : Transform[];
 public var EnemyPrefab : GameObject;
-public var guiScore : GUIText;
+public var guiScore : UILabel;
 
 private var spwanNextTime : float = 0.0F;
 private var spwanTime : float = 3.0F;
@@ -34,7 +34,7 @@ function GetScore(point : int)
 {
 	score += point;
 	
-	guiScore.text = "SCORE " + score.ToString();
+	guiScore.text = "SCORE [ff0000]" + score.ToString() + "[-]";
 }
 
 function PlaySfx(clip : AudioClip, pos : Vector3) 
