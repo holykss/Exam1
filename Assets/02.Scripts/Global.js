@@ -36,3 +36,18 @@ function GetScore(point : int)
 	
 	guiScore.text = "SCORE " + score.ToString();
 }
+
+function PlaySfx(clip : AudioClip, pos : Vector3) 
+{
+	var goSfx = new GameObject("audio");
+	
+	goSfx.transform.position = pos;
+	
+	var source : AudioSource = goSfx.AddComponent(AudioSource);
+	source.clip = clip;
+	
+	source.volume = 1.0F;
+	source.Play();
+	
+	Destroy(goSfx, clip.length);
+}

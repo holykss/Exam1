@@ -17,7 +17,6 @@ function OnCollisionEnter (Coll : Collision) {
 			expBarrel();
 		}
 	}
-
 }
 
 function expBarrel () {

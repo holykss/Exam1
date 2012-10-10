@@ -19,8 +19,15 @@ private var speed : float = 10.0F;
 public var firePos : Transform;
 public var bulletPrefab : GameObject;
 
+public var fireSfx : AudioClip;
+
+private var global : Global;
+
+
 function Start()
 {
+	global = GameObject.Find("Global").GetComponent.<Global>();
+
 	var idx : int = Random.Range(0, anim.idle.length);
 	animBody.animation.clip = anim.idle[idx];
 	animBody.animation.Play();
@@ -57,6 +64,13 @@ function Update () {
 	}
 	
 	if (Input.GetButtonDown("Jump")) {
+	
+	
+//		audio.clip = fireSfx;
+//		audio.Play();
+
+		global.PlaySfx(fireSfx, transform.position);
+		
 		var _bullet : GameObject = Instantiate(bulletPrefab, firePos.position, firePos.rotation);
 		
 		Destroy(_bullet, 2.0F);
