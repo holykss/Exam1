@@ -24,6 +24,9 @@ public var fireSfx : AudioClip;
 private var global : Global;
 public var hp : int = 100;
 
+public var fsHpBar : UIFilledSprite;
+
+
 
 function Start()
 {
@@ -87,6 +90,8 @@ function OnTriggerEnter (Coll : Collider)
 	if (Coll.gameObject.tag == "PUNCH")
 	{
 		hp -= 10;
+		
+		fsHpBar.fillAmount = hp / 100.0F;
 		
 		Debug.Log("Hp = " + hp);
 		

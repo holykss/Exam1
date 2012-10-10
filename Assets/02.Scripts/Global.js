@@ -9,7 +9,6 @@ private var spwanTime : float = 3.0F;
 private var score : int = 0;
 private var hp : int;
 
-
 function Start()
 {
 	hp = GameObject.Find("Player").GetComponent.<PlayerControl>().hp;
