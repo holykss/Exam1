@@ -7,10 +7,12 @@ public var guiScore : UILabel;
 private var spwanNextTime : float = 0.0F;
 private var spwanTime : float = 3.0F;
 private var score : int = 0;
+private var hp : int;
 
 
 function Start()
 {
+	hp = GameObject.Find("Player").GetComponent.<PlayerControl>().hp;
 	GetScore(0);
 }
 
@@ -50,4 +52,14 @@ function PlaySfx(clip : AudioClip, pos : Vector3)
 	source.Play();
 	
 	Destroy(goSfx, clip.length);
+}
+
+function OnPause()
+{
+	Time.timeScale = 0.0F;
+}
+
+function OnResume()
+{
+	Time.timeScale = 1.0F;
 }

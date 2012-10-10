@@ -22,6 +22,7 @@ public var bulletPrefab : GameObject;
 public var fireSfx : AudioClip;
 
 private var global : Global;
+public var hp : int = 100;
 
 
 function Start()
@@ -35,17 +36,20 @@ function Start()
 
 function Update () {
 
+	if (hp <=0)
+		return;
+
 	var hor : float = Input.GetAxis("Horizontal");
 	
-	#if UNITY_EDITOR
-	Debug.Log("Hor = " + hor.ToString());
-	#endif
+//	#if UNITY_EDITOR
+//	Debug.Log("Hor = " + hor.ToString());
+//	#endif
 	
 	
 	var ver : float = Input.GetAxis("Vertical");
-	#if UNITY_IPHONE || UNITY_ANDROID
-	Debug.Log("Ver = " + ver);
-	#endif
+//	#if UNITY_IPHONE || UNITY_ANDROID
+//	Debug.Log("Ver = " + ver);
+//	#endif
 	
 	transform.Translate(Vector3.forward * ver * Time.deltaTime * speed);
 //	transform.Translate(Vector3.right * hor * Time.deltaTime * speed);
@@ -76,4 +80,29 @@ function Update () {
 		Destroy(_bullet, 2.0F);
 	}
 	
+}
+
+function OnTriggerEnter (Coll : Collider)
+{
+	if (Coll.gameObject.tag == "PUNCH")
+	{
+		hp -= 10;
+		
+		Debug.Log("Hp = " + hp);
+		
+		if (hp <= 0)
+		{
+			die();
+		}
+	}
+}
+
+function die()
+{
+	gameObject.GetComponent.<CapsuleCollider>().enabled = false;
+	gameObject.GetComponent.<Rigidbody>().useGravity = false;
+	
+	var idx = Random.Range(0, anim.die.Length);
+	
+	animBody.animation.CrossFade(anim.die[idx].name, 0.2F);
 }
