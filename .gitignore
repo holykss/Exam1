@@ -16,3 +16,7 @@ Temp
 *.pidb
 build
 
+*.suo
+*.csproj
+*.sln
+Thumbs.db
