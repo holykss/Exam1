@@ -1,9 +1,9 @@
 #pragma strict
 
-public var SpwanPoints : Transform[];
 public var EnemyPrefab : GameObject;
 public var guiScore : UILabel;
 
+private var SpwanPoints : GameObject[];
 private var spwanNextTime : float = 0.0F;
 private var spwanTime : float = 3.0F;
 private var score : int = 0;
@@ -11,6 +11,9 @@ private var hp : int;
 
 function Start()
 {
+	//assign spwan points
+	SpwanPoints = GameObject.FindGameObjectsWithTag("SPOINT");
+
 	hp = GameObject.Find("Player").GetComponent.<PlayerControl>().hp;
 	GetScore(0);
 }
@@ -24,7 +27,7 @@ function Update() {
 //		}
 
 		var idx = Random.Range(0, SpwanPoints.Length);
-		Instantiate(EnemyPrefab, SpwanPoints[idx].position, SpwanPoints[idx].rotation);
+		Instantiate(EnemyPrefab, SpwanPoints[idx].transform.position, SpwanPoints[idx].transform.rotation);
 
 		spwanNextTime = Time.time + spwanTime;
 		

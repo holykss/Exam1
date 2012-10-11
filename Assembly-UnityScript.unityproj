@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +51,7 @@
      <Compile Include="Assets\02.Scripts\Global.js" />
      <Compile Include="Assets\02.Scripts\PlayerControl.js" />
      <Compile Include="Assets\02.Scripts\WallControl.js" />
+     <Compile Include="Assets\02.Scripts\guiMain.js" />
      <Compile Include="Assets\04.Models\character1\Scripts\CharacterCamera.js" />
      <Compile Include="Assets\04.Models\character1\Scripts\CharacterControl.js" />
      <Compile Include="Assets\04.Models\character1\Scripts\CollisionParticleEffect.js" />

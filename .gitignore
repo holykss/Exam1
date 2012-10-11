@@ -19,4 +19,4 @@ build
 *.suo
 *.csproj
 *.sln
-Thumbs.db
+Thumbs.db*
