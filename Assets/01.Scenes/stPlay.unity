@@ -1804,7 +1804,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 367771000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -372.499573, y: 206.5, z: 0}
+  m_LocalPosition: {x: -449.497711, y: 222, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1859561073}
@@ -2259,13 +2259,14 @@ MonoBehaviour:
   mText: ->
   mMaxLineWidth: 0
   mEncoding: 1
-  mMultiline: 1
+  mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mLineWidth: 0
+  mMultiline: 1
 --- !u!1 &487628289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3598,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 906541444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -246.499985, y: 183.5, z: 0}
+  m_LocalPosition: {x: -296.49823, y: 198, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 646634323}
@@ -3870,13 +3871,14 @@ MonoBehaviour:
   mText: '||'
   mMaxLineWidth: 0
   mEncoding: 1
-  mMultiline: 1
+  mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mLineWidth: 0
+  mMultiline: 1
 --- !u!1 &990469645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4082,13 +4084,14 @@ MonoBehaviour:
   mText: SCORE 0
   mMaxLineWidth: 0
   mEncoding: 1
-  mMultiline: 1
+  mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mLineWidth: 0
+  mMultiline: 1
 --- !u!1 &1050766469
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,7 +4281,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1075573470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.499786377, y: 157.5, z: 0}
+  m_LocalPosition: {x: -.498523712, y: 169, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1148826096}
@@ -4435,7 +4438,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1110121069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 371.5, y: 206.5, z: 0}
+  m_LocalPosition: {x: 448.50235, y: 222, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1043998386}
@@ -5040,6 +5043,7 @@ MonoBehaviour:
   m_Name: 
   useMouse: 1
   useTouch: 1
+  allowMultiTouch: 1
   useKeyboard: 1
   useController: 1
   eventReceiverMask:
@@ -6151,7 +6155,7 @@ Transform:
   m_GameObject: {fileID: 1717990564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -81.5180664, y: 0, z: 0}
-  m_LocalScale: {x: .00485436898, y: .00485436898, z: .00485436898}
+  m_LocalScale: {x: .00451467279, y: .00451467279, z: .00451467279}
   m_Children:
   - {fileID: 1313045712}
   m_Father: {fileID: 0}
@@ -6166,7 +6170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5ecb5660b11414fb042fb826e03b73, type: 1}
   m_Name: 
   automatic: 1
-  manualHeight: 412
+  manualHeight: 443
 --- !u!1 &1722375341
 GameObject:
   m_ObjectHideFlags: 0
@@ -6718,13 +6722,14 @@ MonoBehaviour:
   mText: HP
   mMaxLineWidth: 0
   mEncoding: 1
-  mMultiline: 1
+  mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mLineWidth: 0
+  mMultiline: 1
 --- !u!1 &1863455779
 GameObject:
   m_ObjectHideFlags: 0
