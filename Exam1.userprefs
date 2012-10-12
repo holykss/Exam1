@@ -1,29 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\04.Models\character1\Scripts\myThirdPersonController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02.Scripts\EnemyControl.js">
     <Files>
-      <File FileName="Assets\04.Models\character1\Scripts\myThirdPersonController.js" Line="197" Column="41" />
+      <File FileName="Assets\02.Scripts\PlayerControl.js" Line="100" Column="4" />
+      <File FileName="Assets\04.Models\character1\Scripts\myThirdPersonController.js" Line="1" Column="1" />
       <File FileName="Assets\04.Models\Robot\animations-list-brutes.txt" Line="1" Column="1" />
-      <File FileName="Assets\02.Scripts\PlayerControl.js" Line="33" Column="60" />
       <File FileName="Assets\02.Scripts\WallControl.js" Line="1" Column="1" />
       <File FileName="Assets\02.Scripts\BulletControl.js" Line="1" Column="1" />
       <File FileName="Assets\02.Scripts\Gizmo.js" Line="1" Column="1" />
-      <File FileName="Assets\02.Scripts\BarrelControl.js" Line="1" Column="1" />
-      <File FileName="Assets\02.Scripts\EnemyControl.js" Line="1" Column="1" />
-      <File FileName="Assets\02.Scripts\Global.js" Line="1" Column="1" />
+      <File FileName="Assets\02.Scripts\BarrelControl.js" Line="26" Column="1" />
+      <File FileName="Assets\02.Scripts\EnemyControl.js" Line="73" Column="15" />
+      <File FileName="Assets\02.Scripts\Global.js" Line="39" Column="17" />
+      <File FileName="Assets\02.Scripts\guiMain.js" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-UnityScript" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="02.Scripts" expanded="True" />
-              <Node name="04.Models" expanded="True">
-                <Node name="character1" expanded="True">
-                  <Node name="Scripts" expanded="True">
-                    <Node name="myThirdPersonController.js" selected="True" />
-                  </Node>
-                </Node>
+              <Node name="02.Scripts" expanded="True">
+                <Node name="EnemyControl.js" selected="True" />
               </Node>
             </Node>
           </Node>

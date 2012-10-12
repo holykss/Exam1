@@ -10,12 +10,17 @@ function OnCollisionEnter (Coll : Collision) {
 	{
 		Instantiate(sparkEffect, Coll.transform.position, Coll.transform.rotation);
 		Destroy(Coll.gameObject);
+		
+		OnDamage();
+	}
+}
 
-		++hitCount;
-		if (hitCount >= 3)
-		{
-			expBarrel();
-		}
+function OnDamage()
+{
+	++hitCount;
+	if (hitCount >= 3)
+	{
+		expBarrel();
 	}
 }
 
@@ -28,3 +33,4 @@ function expBarrel () {
 	
 	Destroy(gameObject, 5.0F);
 }
+

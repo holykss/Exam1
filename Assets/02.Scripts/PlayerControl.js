@@ -83,6 +83,28 @@ function Update () {
 		Destroy(_bullet, 2.0F);
 	}
 	
+	
+	if (Input.GetButtonDown("Fire1")) {
+		Debug.Log("create Minion)");
+		
+		var hit : RaycastHit;
+		
+		if (Physics.Raycast(firePos.position, firePos.forward, hit, 100.0f))
+		{
+			if (hit.collider.tag == "BARREL")
+			{
+				hit.collider.GetComponent.<BarrelControl>().OnDamage();
+			}
+			else if (hit.collider.tag == "ENEMY")
+			{
+			
+			}
+		
+		}
+	
+	
+	}
+	
 }
 
 function OnTriggerEnter (Coll : Collider)
