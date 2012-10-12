@@ -84,16 +84,21 @@ function Update () {
 	}
 	
 	
+	var ray : Ray = Camera.mainCamera.ScreenPointToRay(Input.mousePosition);
+	Debug.DrawRay(ray.origin, ray.direction * 50, Color.yellow);
+
 	if (Input.GetButtonDown("Fire1")) {
 		Debug.Log("create Minion)");
 		
+//		var hit : RaycastHit;
+//		if (Physics.Raycast(firePos.position, firePos.forward, hit, 100.0f))
 		var hit : RaycastHit;
 		
-		if (Physics.Raycast(firePos.position, firePos.forward, hit, 100.0f))
+		if (Physics.Raycast(ray, hit, 100.0f))
 		{
 			if (hit.collider.tag == "BARREL")
 			{
-				hit.collider.GetComponent.<BarrelControl>().OnDamage();
+				hit.collider.GetComponent.<BarrelControl>().OnDamageWithPosition(hit.point);
 			}
 			else if (hit.collider.tag == "ENEMY")
 			{

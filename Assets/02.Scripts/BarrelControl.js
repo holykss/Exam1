@@ -8,15 +8,15 @@ public var sparkEffectForBarrel : GameObject;
 function OnCollisionEnter (Coll : Collision) {
 	if (Coll.gameObject.tag == "BULLET")
 	{
-		Instantiate(sparkEffect, Coll.transform.position, Coll.transform.rotation);
+		OnDamageWithPosition(Coll.transform.position);
 		Destroy(Coll.gameObject);
-		
-		OnDamage();
 	}
 }
 
-function OnDamage()
+function OnDamageWithPosition(position : Vector3)
 {
+	Instantiate(sparkEffect, position, transform.rotation);
+		
 	++hitCount;
 	if (hitCount >= 3)
 	{
