@@ -97,7 +97,7 @@ function Update () {
 			}
 			else if (hit.collider.tag == "ENEMY")
 			{
-			
+				hit.collider.GetComponent.<EnemyControl>().OnDamage(100);
 			}
 		
 		}

@@ -149,7 +149,7 @@ GameObject:
   - 114: {fileID: 28357281}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -232,6 +232,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
       propertyPath: hitCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
@@ -401,6 +405,10 @@ Prefab:
       propertyPath: hitCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
   m_RootGameObject: {fileID: 1100284340}
@@ -445,6 +453,10 @@ Prefab:
       propertyPath: hitCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
   m_RootGameObject: {fileID: 909549044}
@@ -488,6 +500,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
       propertyPath: hitCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
@@ -568,7 +584,7 @@ GameObject:
   - 114: {fileID: 218650691}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -786,6 +802,10 @@ Prefab:
       propertyPath: hitCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
   m_RootGameObject: {fileID: 524116415}
@@ -829,6 +849,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
       propertyPath: hitCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
@@ -902,7 +926,7 @@ GameObject:
   - 114: {fileID: 493262557}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -959,7 +983,7 @@ GameObject:
   - 114: {fileID: 524116418}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1151,6 +1175,10 @@ Prefab:
       propertyPath: hitCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
   m_RootGameObject: {fileID: 1326945323}
@@ -1205,7 +1233,7 @@ GameObject:
   - 114: {fileID: 743870894}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1420,7 +1448,7 @@ GameObject:
   - 114: {fileID: 848751997}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1537,7 +1565,7 @@ GameObject:
   - 114: {fileID: 909549047}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1709,7 +1737,7 @@ GameObject:
   - 114: {fileID: 1100284343}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1940,7 +1968,7 @@ GameObject:
   - 114: {fileID: 1326945326}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2431,6 +2459,10 @@ Prefab:
       propertyPath: hitCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
   m_RootGameObject: {fileID: 28357278}
@@ -2475,7 +2507,7 @@ GameObject:
   - 114: {fileID: 1595141833}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: BARREL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2659,6 +2691,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
       propertyPath: hitCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
@@ -2893,6 +2929,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
       propertyPath: hitCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}
+      propertyPath: m_TagString
+      value: BARREL
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74c486d6759564c42818dacf5a262023, type: 2}

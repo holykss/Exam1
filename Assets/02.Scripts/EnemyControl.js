@@ -68,14 +68,20 @@ function OnCollisionEnter(Coll : Collision)
 	if (Coll.gameObject.tag == "BULLET") {
 		Destroy(Coll.gameObject);
 		
-		hp -= Coll.gameObject.GetComponent.<BulletControl>().damage;
-		
-		if (hp <= 0)
-			Die();
-		else
-			animBody.CrossFade(animEnemy.hit.name, 0.01F);
+		OnDamage(Coll.gameObject.GetComponent.<BulletControl>().damage);
 		
 	}
+}
+
+function OnDamage(damage : int)
+{
+
+	hp -= damage;
+
+	if (hp <= 0)
+		Die();
+	else
+		animBody.CrossFade(animEnemy.hit.name, 0.01F);
 }
 
 function Die()
