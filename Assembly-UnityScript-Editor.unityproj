@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{3AEC4068-0D9A-D4B6-46F5-69AC143D3A68}</ProjectGuid>
+	<ProjectGuid>{E174466F-AE79-8358-B038-40CCA833330D}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<AssemblyName>Assembly-UnityScript-Editor</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,22 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\02.Scripts\BarrelControl.js" />
-     <Compile Include="Assets\02.Scripts\BulletControl.js" />
-     <Compile Include="Assets\02.Scripts\Download.js" />
-     <Compile Include="Assets\02.Scripts\EnemyControl.js" />
-     <Compile Include="Assets\02.Scripts\Gizmo.js" />
-     <Compile Include="Assets\02.Scripts\Global.js" />
-     <Compile Include="Assets\02.Scripts\PlayerControl.js" />
-     <Compile Include="Assets\02.Scripts\WallControl.js" />
-     <Compile Include="Assets\02.Scripts\guiMain.js" />
-     <Compile Include="Assets\04.Models\character1\Scripts\CharacterCamera.js" />
-     <Compile Include="Assets\04.Models\character1\Scripts\CharacterControl.js" />
-     <Compile Include="Assets\04.Models\character1\Scripts\CollisionParticleEffect.js" />
-     <Compile Include="Assets\04.Models\character1\Scripts\CollisionSoundEffect.js" />
-     <Compile Include="Assets\04.Models\character1\Scripts\Foot.js" />
-     <Compile Include="Assets\04.Models\character1\Scripts\OrbitCamera.js" />
-     <Compile Include="Assets\04.Models\character1\Scripts\myThirdPersonController.js" />
+     <Compile Include="Assets\Editor\BuildAssetBundle.js" />
      <None Include="Assets\NGUI\Resources\Shaders\Depth.shader" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
@@ -92,13 +77,16 @@
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
- <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{BC8EE584-3075-6989-041E-9A5CDAFF07B8}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{BC8EE584-3075-6989-041E-9A5CDAFF07B8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{6A7246D7-8D54-F3F4-2933-82C2936EA19B}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{BF3BA433-F21A-E270-7FB8-A6E1302CAD85}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{3AEC4068-0D9A-D4B6-46F5-69AC143D3A68}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

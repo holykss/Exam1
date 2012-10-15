@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\02.Scripts\BarrelControl.js" />
      <Compile Include="Assets\02.Scripts\BulletControl.js" />
+     <Compile Include="Assets\02.Scripts\Download.js" />
      <Compile Include="Assets\02.Scripts\EnemyControl.js" />
      <Compile Include="Assets\02.Scripts\Gizmo.js" />
      <Compile Include="Assets\02.Scripts\Global.js" />
