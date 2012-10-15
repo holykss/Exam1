@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02.Scripts\Download.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs">
     <Files>
       <File FileName="Assets\02.Scripts\Download.js" Line="6" Column="3" />
       <File FileName="Assets\02.Scripts\PlayerControl.js" Line="1" Column="1" />
       <File FileName="Assets\04.Models\character1\Scripts\myThirdPersonController.js" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" Line="1" Column="1" />
       <File FileName="Assets\02.Scripts\WallControl.js" Line="1" Column="1" />
       <File FileName="Assets\02.Scripts\BulletControl.js" Line="1" Column="1" />
       <File FileName="Assets\02.Scripts\Gizmo.js" Line="1" Column="1" />
@@ -14,28 +15,45 @@
       <File FileName="Assets\02.Scripts\guiMain.js" Line="1" Column="1" />
       <File FileName="Assets\04.Models\Robot\animations-list-brutes.txt" Line="1" Column="1" />
       <File FileName="Assets\Editor\BuildAssetBundle.js" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UIItemSlot.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Assembly-UnityScript" expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="02.Scripts" expanded="True">
-                <Node name="Download.js" selected="True" />
-              </Node>
-              <Node name="04.Models" expanded="True">
-                <Node name="character1" expanded="True">
-                  <Node name="Scripts" expanded="True" />
+              <Node name="NGUI" expanded="True">
+                <Node name="Examples" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="InventorySystem" expanded="True">
+                      <Node name="Game" expanded="True">
+                        <Node name="UICursor.cs" selected="True" />
+                      </Node>
+                    </Node>
+                  </Node>
                 </Node>
               </Node>
             </Node>
           </Node>
-          <Node name="Assembly-UnityScript-Editor" expanded="True">
+          <Node name="Assembly-CSharp-Editor" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="04.Models" expanded="True">
-                <Node name="Robot" expanded="True" />
+              <Node name="NGUI" expanded="True">
+                <Node name="Examples" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="InventorySystem" expanded="True">
+                      <Node name="Editor" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
-              <Node name="Editor" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Assembly-UnityScript" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="02.Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
